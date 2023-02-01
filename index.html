@@ -15,11 +15,29 @@
 
 <body>
     <div class="loading">
-        <div class="loading-bar"></div>
-        <div class="loading-bar"></div>
-        <div class="loading-bar"></div>
-        <div class="loading-bar"></div>
+        <div class="loading-text">W</div>
+        <div class="loading-text">E</div>
+        <div class="loading-text">L</div>
+        <div class="loading-text">C</div>
+        <div class="loading-text">O</div>
+        <div class="loading-text">M</div>
+        <div class="loading-text">E</div>
     </div>
+
+    <div class="content" style="display: none;">
+
+    </div>
+
+    <script>
+        // Wait for 5 seconds (the duration of the loading animation)
+        setTimeout(function () {
+            // Hide the loading animation
+            document.querySelector(".loading").style.display = "none";
+
+            // Show the content
+            document.querySelector(".content").style.display = "block";
+        }, 5000);
+    </script>
 </body>
 
 </html>
