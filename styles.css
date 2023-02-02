@@ -133,26 +133,27 @@ h1 {
     font-size: 80px;
 }
 
-.circle {
+.circles-container {
     display: flex;
     justify-content: center;
+}
+
+.circle {
     width: 70px;
     height: 70px;
-    border-radius: 50%;
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 20px;
+    background-size: contain;
+    border-radius: 50%;
+    margin: 10px;
     transition: all 0.3s ease-in-out;
-
 }
 
 .circle:hover {
-    transform: scale(1.5);
-    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
     cursor: pointer;
     width: 90px;
     height: 90px;
+    transition: all 0.3s ease-in-out;
 }
 
 #circle1 {
