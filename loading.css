@@ -6,7 +6,7 @@
 }
 
 .loading-text {
-    color: #8000FF;
+    color: #a70808;
     font-size: 36px;
     animation: loading 0.5s ease-in-out forwards;
     opacity: 0;

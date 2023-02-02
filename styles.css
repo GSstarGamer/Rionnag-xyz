@@ -1,15 +1,17 @@
+/* normal */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    background: linear-gradient(to bottom, #fff, #000);
-    background-size: 400% 400%;
-    color: white;
-    animation: animationName 5s ease infinite;
+    background-color: black;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    animation: AnimationName 5s ease infinite;
+    overflow: hidden;
 }
 
-@keyframes bganim {
+@keyframes AnimationName {
     0% {
         background-position: 0% 50%;
     }
@@ -119,4 +121,48 @@ body {
 .content>*:nth-child(5) {
     animation-name: slideRight;
     animation-delay: 2s;
+}
+
+/* main for body */
+h1 {
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-top: 250px;
+    font-size: 80px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 20px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.circle:hover {
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+}
+
+#circle1 {
+    background-image: url(https://cdn.discordapp.com/attachments/661472973815021568/1070609626531368970/logo-ig-png-32464.png);
+}
+
+#circle2 {
+    background-image: url(https://cdn.discordapp.com/attachments/661472973815021568/1070609254697943050/discord-logo-png-7622.png);
+}
+
+#circle3 {
+    background-image: url(https://cdn.discordapp.com/attachments/661472973815021568/1070609921835536454/youtube-logo-png-2069.png);
 }

@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="loading.css">
 
+    <!-- js -->
+    <script type="text/javascript" src="text-anim.js"></script>
+
 </head>
 
 <body>
@@ -25,19 +28,12 @@
     </div>
 
     <div class="content" style="display: none;">
-
+        <div class="background"></div>
+        <h1 data-value="GS_Rionnag">GS_Rionnag</h1>
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
     </div>
-
-    <script>
-        // Wait for 5 seconds (the duration of the loading animation)
-        setTimeout(function () {
-            // Hide the loading animation
-            document.querySelector(".loading").style.display = "none";
-
-            // Show the content
-            document.querySelector(".content").style.display = "block";
-        }, 5000);
-    </script>
 </body>
 
 </html>
